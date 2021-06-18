@@ -1,0 +1,231 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #111;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #333;
+    text-shadow: none;
+}
+
+::selection {
+    background: #333;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    height: 100vh;
+    background: #277883;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+#main {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+
+    width: 100%;
+    max-width: 480px;
+    padding: 16px;
+}
+
+#inner {
+    text-align: center;
+    background: rgba(220, 230, 240, 0.85);
+    border-radius: 16px;
+    padding: 32px 0 16px 0;
+    color: #111;
+    /*box-shadow: 0 2px 8px 2px rgba(17, 17, 17, 0.75);*/
+}
+
+img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #111;
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0 0 16px 0;
+    padding: 0 16px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+p {
+    margin: 0 0 24px 0;
+    padding: 0 16px;
+    font-size: 20px;
+}
+
+a {
+    border: none;
+    font-weight: bold;
+    text-align: left;
+    /*text-transform: uppercase;*/
+    color: #fafafa;
+    line-height: 1;
+
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button_wide {
+    width: 100%;
+    height: 64px;
+    padding: 0 32px 0 32px;
+    margin: 0 0 8px 0;
+    font-size: 20px;
+}
+
+#links {
+    padding: 0;
+    margin: 16px 0 16px 0;
+    list-style-type: none;
+}
+
+#links > li {
+    margin: 0 0 16px 0;
+    padding: 0 16px;
+}
+
+#links > li > a {
+    padding: 0 16px 0 16px;
+    height: 48px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+#vcard_button {
+    background: #0a8e46;
+}
+
+#facebook {
+    background: #4267B2;
+}
+
+#linkedin {
+    background: #2867B2;
+}
+
+#instagram {
+    background: #d6249f;
+    background: radial-gradient(circle at 10% 150%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+#instagram > .icon {
+    color: #fafafa;
+}
+
+#telegram {
+    background: #0088cc;
+}
+
+#github {
+    background: #333;
+}
+
+#email {
+    background: #ea4335;
+
+}
+
+#blog_button {
+    background: #111;
+    color: #fafafa;
+}
